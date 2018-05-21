@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() { 
-    fetch('http://www.icarros.com.br/rest/search/v1/0/makes')
+    fetch('https://www.icarros.com.br/rest/search/v1/0/makes')
       .then(response => response.json())
       .then(data => this.setState({ hits: data }));
   }
