@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import axios from "axios";
+
+import Button from "./components/Button";
+import ButtonRound from "./components/ButtonRound";
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -25,6 +28,13 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <Button>
+          <i>teste</i>
+        </Button>
+        <ButtonRound>
+          <p>1</p>
+          <p>2</p>
+        </ButtonRound>
         {hits.map(hit =>
           <div key={hit.nome}>
             {hit.nome}
